@@ -1,6 +1,6 @@
 # 🦀 Rust Array Indexing & Error Handling Exercise
 
-## 📖 Introduction
+## Introduction
 
 This exercise demonstrates how **Rust ensures memory safety and reliability** when dealing with **user input, data parsing, and array indexing**.  
 Rust prevents undefined behavior by stopping your program (panicking safely) if you attempt to access memory outside valid array bounds.
