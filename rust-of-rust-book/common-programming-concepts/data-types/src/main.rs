@@ -9,7 +9,7 @@ fn main() {
     // Integer types
     let a: i8 = -100; // 8-bit signed integer
     let b: u8 = 200; // 8-bit unsigned integer
-    let c: i16 = -30000; // 16-bit signed integer
+    let c: i32 = -3000; // 16-bit signed integer
     let d: u16 = 60000; // 16-bit unsigned integer
     let e: i32 = -2000000000; // 32-bit signed integer
     let f: u32 = 4000000000; // 32-bit unsigned integer
@@ -45,6 +45,21 @@ fn main() {
     let remainder = e % 7; // modulus
     let float_sum = x + 1.0; // addition
     let float_product = y * 2.0; // multiplication
-    println!("Operations: sum={sum}, difference={difference}, product={product}, quotient={quotient}, remainder={remainder}, float_sum={float_sum}, float_product={float_product}");
-    
+    println!("Operations: sum = {sum}, difference = {difference}, product = {product}, quotient = {quotient}, remainder = {remainder}, float_sum = {float_sum}, float_product = {float_product}");
+
+    //Compound types: tuples and arrays
+    // Tuple type
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup; // destructuring
+    println!("Tuple: x = {x}, y = {y}, z = {z}");
+    let first = tup.0; // accessing tuple elements
+    let second = tup.1;
+    let third = tup.2;
+    println!("Tuple elements: first = {first}, second = {second}, third = {third}");
+
+    // Array type
+    let arr: [i32; 5] = [1, 2, 3, 4, 5]; // array of 5 integers
+    let first_elem = arr[0]; // accessing array elements
+    let second_elem = arr[1];
+    println!("Array elements: first = {first_elem}, second = {second_elem}");
 }
