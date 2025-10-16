@@ -58,6 +58,8 @@ fn main() {
     println!("Tuple elements: first = {first}, second = {second}, third = {third}");
 
     // Array type
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    println!("Months: {:?}", months); // {:?} is used to print arrays
     let arr: [i32; 5] = [1, 2, 3, 4, 5]; // array of 5 integers
     let first_elem = arr[0]; // accessing array elements
     let second_elem = arr[1];
