@@ -1,92 +1,12 @@
-   0.019084811s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: fingerprint error for data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types)/Check { test: false }/TargetInner { name: "data-types", doc: true, ..: with_path("/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", Edition2024) }
-   0.019120387s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-2c9d0ba10a32894e/bin-data-types`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/core/src/ops/function.rs:290:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:589:40
-  16: std::panicking::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:552:19
-  17: std::panic::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:589:40
-  20: std::panicking::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:552:19
-  21: std::panic::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/rt.rs:171:5
-  23: main
-  24: __libc_start_call_main
-             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
-  25: __libc_start_main_impl
-             at ./csu/../csu/libc-start.c:360:3
-  26: <unknown>
-   0.121936706s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: fingerprint error for data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types)/Check { test: true }/TargetInner { name: "data-types", doc: true, ..: with_path("/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", Edition2024) }
-   0.122015415s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-fc8adf6998508031/test-bin-data-types`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/core/src/ops/function.rs:290:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:589:40
-  16: std::panicking::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:552:19
-  17: std::panic::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:589:40
-  20: std::panicking::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panicking.rs:552:19
-  21: std::panic::catch_unwind
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/1159e78c4747b02ef996e55082b704c09b970588/library/std/src/rt.rs:171:5
-  23: main
-  24: __libc_start_call_main
-             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
-  25: __libc_start_main_impl
-             at ./csu/../csu/libc-start.c:360:3
-  26: <unknown>
+   0.089796254s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: stale: changed "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs"
+   0.089815468s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:           (vs) "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-2c9d0ba10a32894e/dep-bin-data-types"
+   0.089825705s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1760600102, nanos: 332965564 } < FileTime { seconds: 1760600229, nanos: 943804486 }
+   0.089898851s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: fingerprint dirty for data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types)/Check { test: false }/TargetInner { name: "data-types", doc: true, ..: with_path("/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", Edition2024) }
+   0.089918539s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-2c9d0ba10a32894e/dep-bin-data-types", reference_mtime: FileTime { seconds: 1760600102, nanos: 332965564 }, stale: "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", stale_mtime: FileTime { seconds: 1760600229, nanos: 943804486 } }))
+   0.090192631s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: stale: changed "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs"
+   0.090200644s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:           (vs) "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-fc8adf6998508031/dep-test-bin-data-types"
+   0.090209124s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1760600102, nanos: 332965564 } < FileTime { seconds: 1760600229, nanos: 943804486 }
+   0.090255150s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint: fingerprint dirty for data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types)/Check { test: true }/TargetInner { name: "data-types", doc: true, ..: with_path("/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", Edition2024) }
+   0.090272172s  INFO prepare_target{force=false package_id=data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types) target="data-types"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/target/debug/.fingerprint/data-types-fc8adf6998508031/dep-test-bin-data-types", reference_mtime: FileTime { seconds: 1760600102, nanos: 332965564 }, stale: "/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types/src/main.rs", stale_mtime: FileTime { seconds: 1760600229, nanos: 943804486 } }))
     Checking data-types v0.1.0 (/home/emperor/gidy-turbin3/q4-turbin3-prebuilder-gidy/rust-of-rust-book/common-programming-concepts/data-types)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
