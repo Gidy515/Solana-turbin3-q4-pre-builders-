@@ -1,10 +1,10 @@
 fn main() {
     println!("Hello, world!");
-    let mut number = 10;
+    let mut number_count = 10;
 
-    while number != 0 {
-        println!("counting down: {number}");
-        number -= 1;
+    while number_count != 0 {
+        println!("counting down: {number_count}");
+        number_count -= 1;
     }
-    println!("LIFTOFF!!!");
+    println!("TURBIN3!!!");
 }
