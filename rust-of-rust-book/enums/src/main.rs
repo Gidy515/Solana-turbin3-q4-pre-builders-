@@ -91,5 +91,29 @@ If there isn’t a value inside, the function should return the None value and n
     let none = option_plus_one(None);
     println!("six: {:?}, none: {:?}", six, none);
 
+    /*
+    Rust has a pattern we can use when we want a catch-all but don’t want to use the value in the catch-all pattern: 
+    _ is a special pattern that matches any value and does not bind to that value. This tells Rust we aren’t going to use the value, 
+    so Rust won’t warn us about an unused variable.
+     */
+    let dice_roll = 9;
+    match dice_roll {
+        3 => add_fancy_hat(),
+        7 => remove_fancy_hat(),
+        _ => reroll(),
+    }
+    fn add_fancy_hat() {}
+    fn remove_fancy_hat() {}
+    fn reroll() {}
+
+    // if let syntax as alternative to match when you only care about one pattern
+    let some_u8_value = Some(0u8);
+    match some_u8_value {
+        Some(3) => println!("three"),
+        _ => (),
+    }
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
 
 }
