@@ -15,16 +15,22 @@ pub mod anchor_counter {
     }
 
     pub fn decrement_counter(ctx: Context<Update>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+        ctx.accounts.counter.count = ctx.accounts.counter.count.checked_sub(1).unwrap();
+        msg!("Counter incremented: {}", ctx.accounts.counter.count);
+        //msg!("Greetings from: {:?}", ctx.program_id);
         Ok(())
     }
 
     pub fn increment_counter(ctx: Context<Update>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+        ctx.accounts.counter.count = ctx.accounts.counter.count.checked_add(1).unwrap();
+        msg!("Counter incremented: {}", ctx.accounts.counter.count);
+        //msg!("Greetings from: {:?}", ctx.program_id);
         Ok(())
     }
 
-    pub fn set_counter(ctx: Context<Update>, value: u8) -> Result<()> {
+    pub fn set_counter(ctx: Context<Update>, value: u64) -> Result<()> {
+        ctx.accounts.counter.count = value;
+        msg!("Counter set to: {value}");
         //ctx.accounts.counter.count = value.clone();
         Ok(())
     }
